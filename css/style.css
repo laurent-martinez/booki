@@ -193,6 +193,8 @@ main {
  width: 30%;
  height: 30%;
  margin: 15px 0px;
+ -webkit-box-shadow: 7px 6px 10px 0px #D8D8D8; 
+ box-shadow: 7px 6px 10px 0px #D8D8D8;
 }
 .accommodation-cards > * {
     flex-basis: 100%;
@@ -241,6 +243,8 @@ aside h2 {
     font-size: 24px;
 }
 .popular-cards {
+    -webkit-box-shadow: 7px 6px 10px 0px #D8D8D8; 
+    box-shadow: 7px 6px 10px 0px #D8D8D8;
     background-color: white;
     border-radius: 20px;
     padding: 5px;
@@ -306,8 +310,8 @@ min-height: max-content;
 .activity-cards {
     margin-bottom: 15px;
     border-radius: 20px;
-    -webkit-box-shadow: 5px 5px 14px -5px #353535; 
-box-shadow: 5px 5px 14px -5px #353535;
+    -webkit-box-shadow: 7px 6px 10px 0px #D8D8D8; 
+    box-shadow: 7px 6px 10px 0px #D8D8D8;
 }
 .card-title {
     padding: 30px;
