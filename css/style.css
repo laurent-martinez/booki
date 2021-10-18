@@ -18,7 +18,7 @@ a {
         color: inherit;
 }
 img {
-    object-fit: cover;
+    object-fit: contain;
 
 }
 
@@ -180,12 +180,30 @@ main {
     align-content:center;
 }
 .card-image {
-    background: url(/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg)center/cover;
+   
     height: 120px;
     width: 100%;
     border-radius: 20px 20px 0px 0px;
+    
 }
-
+.cannebiere {
+    background: url(/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg)center/cover;
+}
+.port {
+    background: url(/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg)center/cover;
+}
+.mouette {
+    background: url(/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg)center/cover;
+}
+.mer {
+    background: url(/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg)center/cover;
+}
+.panier {
+    background: url(/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg)center/cover;
+}
+.amina {
+    background: url(/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg)center/cover;
+}
 .accommodation-cards {
  background-color: white;
  border-radius: 20px;
@@ -218,6 +236,12 @@ main {
 }
 .stars {
     color: #0065FC;
+}
+.grey {
+    color: #D8D8D8;
+}
+.boldy {
+    font-weight: bolder;
 }
 #viewMore {
     padding: 30px;
@@ -259,11 +283,19 @@ aside h2 {
 }
 
 .popular-images {
-    background: url(/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg)center/cover;
     height: 210px;
     min-width: 45%;
     border-radius: 20px 0px 0px 20px;
 
+}
+.matin {
+    background: url(/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg)center/cover;
+}
+.eau {
+    background: url(/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg)center/cover;
+}
+.bleu {
+    background: url(/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg)center/cover;
 }
 .popular-details {
     display: flex;
@@ -290,18 +322,16 @@ aside h2 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
+
+   
 }
-
-
-.image-card img {
+.image-card {
+    min-width: 25%;
+    height: 210px;
     border-radius: 20px 20px 0px 0px;
-    max-width: 100%;
-    
+    background: url(/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg)center/cover;
 }
-.activity-cards1 {
-min-height: max-content;
-}
+
 .twoblock {
     margin: 30px;
     padding: 30px;
