@@ -1,0 +1,314 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    margin: 0;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0; 
+    font-size: 16px;
+    font-weight: 600;
+}
+a {
+        text-decoration: none;
+        color: inherit;
+}
+img {
+    object-fit: cover;
+
+}
+
+header {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    align-items: center;
+}
+.logo img {
+    height: 60px;
+}
+nav ul {
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+nav a {
+    padding: 35px;
+}
+#nav1 {
+    border-top: solid 3px blue;
+}
+#nav2 {
+    padding-top: 38px;
+}
+.search {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.search h1 {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 36.8px;
+    margin-bottom: 5px;
+}
+.search p {
+    font-weight: 400;
+  padding-top: 0;
+  margin: 0;
+}
+.searchbar {
+    display: flex;
+    margin-top: 15px;
+    height: 50px;
+}
+.searchbar input {
+
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 10px;
+    border: #F2F2F2 solid 2px;
+  
+}
+.searchbar button {
+   
+    border-radius: 0px 20px 20px 0px;
+    background-color: #0065FC;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border:#0065FC solid 2px;
+    padding: 0 20px;
+  
+
+}
+.location-mark {
+    border-radius: 20px 0px 0px 20px;
+    width: 50px;
+    color: black;
+    background-color: #F2F2F2;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.filter {
+    display: flex;
+    margin-top: 20px;
+    column-gap: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px 50px 0px 50px;
+}
+.filters {
+    display: flex;
+    border:#F2F2F2 solid 3px;
+    border-radius: 25px;
+    position: relative;
+    height: 50px;
+    align-items: center;
+
+
+
+}
+.filters i {
+    
+    border-radius: 25px;
+    position: absolute;
+    left: -10px;
+    background-color: #DEEBFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0065FC;
+    width: 50px;
+    height: 100%;
+    font-size: 20px;
+}
+.filters p {
+    padding-left: 50px;
+    padding-right: 18px;
+}
+
+#details {
+    display: flex;
+    align-items: center;
+    padding: 30px 50px 20px 50px;
+    column-gap: 20px;
+}
+#details i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0065FC;
+    border: #F2F2F2 solid 2px;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+}
+#details p {
+    font-weight: 400;
+}
+
+main {
+    display: flex;
+    padding: 0px 50px 20px 50px;
+    gap: 35px;
+
+}
+#hosting {
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    flex: 2;
+    display: block;
+    padding: 0px 10px;
+}
+
+#hosting h2 {
+    margin: 30px;
+}
+.accommodation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content:center;
+}
+.card-image {
+    background: url(/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg)center/cover;
+    height: 120px;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.accommodation-cards {
+ background-color: white;
+ border-radius: 20px;
+ padding: 5px;
+ width: 30%;
+ height: 30%;
+ margin: 15px 0px;
+}
+.accommodation-cards > * {
+    flex-basis: 100%;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    height: 40%;
+}
+.text h2 {
+    font-size: 19px;
+    margin: 0;
+    padding: 0;
+}
+.text p {
+    font-weight: 400;
+    padding:10px 0px;
+}
+.stars {
+    color: #0065FC;
+}
+#viewMore {
+    padding: 30px;
+}
+aside {
+    flex: 1;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    display: block;
+    justify-content: center; 
+}
+aside h2 {
+    padding: 30px;
+}
+
+.popular-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.popular-title i {
+    margin-right: 30px;
+    font-size: 24px;
+}
+.popular-cards {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 90%;
+    display: flex;
+}
+
+.popular-cards .stars {
+    padding: 20px;
+}
+
+.popular-images {
+    background: url(/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg)center/cover;
+    height: 210px;
+    min-width: 45%;
+    border-radius: 20px 0px 0px 20px;
+
+}
+.popular-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.popular-info {
+    width: 100%;
+    padding: 0px 15px 0px 15px;
+    font-size: 16px;
+
+}
+.popular-info h2 {
+    display: flex;
+}
+.popular-info p {
+    font-weight: 400;
+}
+#event {
+    padding: 0px 50px;
+}
+.activities {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+
+.image-card img {
+    border-radius: 20px 20px 0px 0px;
+    max-width: 100%;
+    
+}
+.activity-cards1 {
+min-height: max-content;
+}
+.twoblock {
+    margin: 30px;
+    padding: 30px;
+}
+
+.activity-cards {
+    margin-bottom: 15px;
+    border-radius: 20px;
+    -webkit-box-shadow: 5px 5px 14px -5px #353535; 
+box-shadow: 5px 5px 14px -5px #353535;
+}
+.card-title {
+    padding: 30px;
+}
