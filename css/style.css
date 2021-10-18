@@ -121,7 +121,7 @@ nav a {
     height: 50px;
     align-items: center;
     cursor: pointer;
-    transition: .4s;
+    transition: .5s;
 }
 .filters i {
     
@@ -142,11 +142,26 @@ nav a {
     padding-right: 18px;
 }
 
-.filters:hover {
+.money:hover {
 background-color: #0065FC;
 color: white;
-border: none;
+border: #0065FC solid 3px;
 }
+.child:hover {
+    background-color: #0065FC;
+    color: white;
+    border: #0065FC solid 3px;
+    }
+.heart:hover {
+    background-color: #0065FC;
+    color: white;
+    border: #0065FC solid 3px;
+        }
+.dog:hover {
+    background-color: #0065FC;
+     color: white;
+    border: #0065FC solid 3px;
+            }
 #details {
     display: flex;
     align-items: center;
@@ -370,7 +385,24 @@ aside h2 {
     min-width: 25%;
     height: 200px;
     border-radius: 20px 20px 0px 0px;
-    background: url(/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg)center/cover;
+}
+.vieux-port {
+    background: url(/images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg)center/cover;
+}
+.pomegues {
+    background: url(/images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg)center/cover;
+}
+.frioul {
+    background: url(/images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg)center/cover;
+}
+.calanques {
+    background: url(/images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg)center/cover;
+}
+.notre-dame {
+    background: url(/images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg)center/cover;
+}
+.longchamp {
+    background: url(/images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg)center/cover;
 }
 
 .twoblock {
