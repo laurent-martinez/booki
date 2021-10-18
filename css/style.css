@@ -21,6 +21,8 @@ img {
     object-fit: contain;
 
 }
+/* HEADER ******************************************/
+
 
 header {
     margin: auto;
@@ -48,6 +50,10 @@ nav a {
 #nav2 {
     padding-top: 38px;
 }
+
+/* SECTION ***************************************/
+
+
 .search {
     padding-left: 50px;
     padding-right: 50px;
@@ -88,6 +94,7 @@ nav a {
   
 
 }
+
 .location-mark {
     border-radius: 20px 0px 0px 20px;
     width: 50px;
@@ -114,7 +121,7 @@ nav a {
     height: 50px;
     align-items: center;
     cursor: pointer;
-    transition: .3s;
+    transition: .4s;
 }
 .filters i {
     
@@ -164,8 +171,10 @@ main {
     display: flex;
     padding: 0px 50px 20px 50px;
     gap: 30px;
+     }
 
-}
+/* Accommodation ************ARTICLE**********************/
+
 #hosting {
     background-color: #F2F2F2;
     border-radius: 20px;
@@ -208,6 +217,7 @@ main {
 .amina {
     background: url(/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg)center/cover;
 }
+
 .accommodation-cards {
  background-color: white;
  border-radius: 20px;
@@ -225,7 +235,7 @@ main {
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 0px );
     -webkit-backdrop-filter: blur( 0px );
-    border-radius: 10px;
+    border-radius: 20px;
 }
 .accommodation-cards > * {
     flex-basis: 100%;
@@ -258,6 +268,8 @@ main {
 }
 #viewMore {
     padding: 30px;
+
+/* ACCOMMODATION***************ASIDE**************/
 }
 aside {
     flex: 1;
@@ -297,7 +309,7 @@ aside h2 {
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 0px );
     -webkit-backdrop-filter: blur( 0px );
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .popular-cards .stars {
@@ -337,29 +349,39 @@ aside h2 {
 .popular-info p {
     font-weight: 400;
 }
+
+/* ACTIVITIES***********************************************/
+
 #event {
-    padding: 0px 50px;
+  margin: 20px 50px;
 }
 .activities {
-
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-   
+    margin-top: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 30px;
 }
+.activities-col {
+    width: 25%;
+}
+
 .image-card {
     min-width: 25%;
-    height: 210px;
+    height: 200px;
     border-radius: 20px 20px 0px 0px;
     background: url(/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg)center/cover;
 }
 
 .twoblock {
-    margin: 30px;
-    padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-
+.oneblock  .image-card{
+    background-color: blue;
+    height: 500px;
+}
 .activity-cards {
     margin-bottom: 15px;
     border-radius: 20px;
@@ -367,5 +389,28 @@ aside h2 {
     box-shadow: 7px 6px 10px 0px #D8D8D8;
 }
 .card-title {
-    padding: 30px;
+    padding: 20px;
+}
+/* FOOTER ****************************************/
+footer {
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+    
+}
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 50px;
+}
+.footer-col h3 {
+    margin-bottom: 10px;
+}
+.footer-col p {
+    font-weight: 500;
+    margin-bottom: 10px;
 }
