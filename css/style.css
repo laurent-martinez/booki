@@ -17,7 +17,10 @@ a {
         text-decoration: none;
         color: inherit;
 }
-
+img {
+    object-fit: cover;
+    object-position: center;
+}
 /* HEADER ******************************************/
 
 
@@ -108,13 +111,19 @@ nav a {
     
     .search {
         padding: 0;
-        margin: 0;
+        margin-top: 20px;
     }
     .search h1 {
-        margin: 0;
+        margin: 10px 20px;
+        line-height: 20px;
         padding: 0;
-        text-align: justify;
-        font-size: 16px;
+        font-size: 20px;
+    }
+    .search p {
+        margin: 0px 20px;
+    }
+    .searchbar {
+        margin: 0px 20px;
     }
 }
 .searchbar {
@@ -145,7 +154,7 @@ nav a {
 
 .location-mark {
     border-radius: 20px 0px 0px 20px;
-    width: 50px;
+    min-width: 50px;
     color: black;
     background-color: #F2F2F2;
     font-size: 18px;
@@ -236,6 +245,13 @@ main {
     gap: 30px;
      }
 
+@media only screen and (max-width: 750px) {
+    main {
+        flex-direction: column-reverse;
+        margin: 0;
+        padding:0;
+    }
+}
 /* Accommodation ************ARTICLE**********************/
 
 #hosting {
@@ -252,8 +268,27 @@ main {
 .accommodation {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 30px;
     align-content:center;
+}
+@media only screen and (max-width: 750px){
+    #hosting {
+        background-color:blue;
+        border-radius: 0px;
+    }
+    .accommodation {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        background-color: red;
+    }
+    .accommodation-cards {
+      background-color: #fff;
+        margin: 0;
+        padding: 0;
+        gap: 0;
+    }
 }
 .card-image {
    
@@ -262,24 +297,7 @@ main {
     border-radius: 20px 20px 0px 0px;
     
 }
-.cannebiere {
-    background: url(/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg)center/cover;
-}
-.port {
-    background: url(/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg)center/cover;
-}
-.mouette {
-    background: url(/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg)center/cover;
-}
-.mer {
-    background: url(/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg)center/cover;
-}
-.panier {
-    background: url(/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg)center/cover;
-}
-.amina {
-    background: url(/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg)center/cover;
-}
+
 
 .accommodation-cards {
  background-color: white;
@@ -287,7 +305,7 @@ main {
  padding: 5px;
  width: 29%;
  height: 30%;
- margin: 15px 0px;
+ margin: 10px 0px;
  -webkit-box-shadow: 7px 6px 10px 0px #D8D8D8; 
  box-shadow: 7px 6px 10px 0px #D8D8D8;
  cursor: pointer;
@@ -331,15 +349,20 @@ main {
 }
 #viewMore {
     padding: 30px;
-
-/* ACCOMMODATION***************ASIDE**************/
 }
+/* ACCOMMODATION***************ASIDE**************/
+
 aside {
     flex: 1;
     background-color: #F2F2F2;
     border-radius: 20px;
     display: block;
     justify-content: center; 
+}
+@media only screen and (max-width: 750px){
+    aside {
+        border-radius: 0px;
+    }
 }
 aside h2 {
     padding: 30px;
@@ -386,15 +409,7 @@ aside h2 {
     border-radius: 20px 0px 0px 20px;
 
 }
-.matin {
-    background: url(/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg)center/cover;
-}
-.eau {
-    background: url(/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg)center/cover;
-}
-.bleu {
-    background: url(/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg)center/cover;
-}
+
 .popular-details {
     display: flex;
     flex-direction: column;
@@ -414,7 +429,15 @@ aside h2 {
 }
 
 /* ACTIVITIES***********************************************/
-
+@media only screen and (max-width: 750px){
+    #event {
+        margin: 0px;
+    }
+    .activities {
+        flex-direction: column;
+        margin: 0;
+    }
+}
 #event {
   margin: 20px 50px;
 }
@@ -430,28 +453,11 @@ aside h2 {
 }
 
 .image-card {
-    min-width: 25%;
+   width: 100%;
     height: 200px;
     border-radius: 20px 20px 0px 0px;
 }
-.vieux-port {
-    background: url(/images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg)center/cover;
-}
-.pomegues {
-    background: url(/images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg)center/cover;
-}
-.frioul {
-    background: url(/images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg)center/cover;
-}
-.calanques {
-    background: url(/images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg)center/cover;
-}
-.notre-dame {
-    background: url(/images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg)center/cover;
-}
-.longchamp {
-    background: url(/images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg)center/cover;
-}
+
 
 .twoblock {
   display: flex;
@@ -461,6 +467,7 @@ aside h2 {
 .oneblock  .image-card{
     background-color: blue;
     height: 500px;
+    width: 100%;
 }
 .activity-cards {
     margin-bottom: 15px;
@@ -483,12 +490,11 @@ footer {
 .footer-col {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-around;
-    padding: 50px;
+    padding: 30px;
+    margin-right: 200px;
 }
 .footer-col h3 {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .footer-col p {
     font-weight: 500;
