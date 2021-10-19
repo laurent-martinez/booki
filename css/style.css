@@ -22,11 +22,9 @@ a {
 
 
 header {
-    margin: auto;
+    margin-left: 50px;
     display: flex;
     justify-content: space-between;
-    padding-left: 50px;
-    padding-right: 50px;
     align-items: center;
   
 }
@@ -46,16 +44,28 @@ header {
 }
 nav ul {
     margin: 0;
+ 
     list-style-type: none;
     display: flex;
     justify-content: space-between;
+    font-weight: 500;
 }
 nav a {
     padding: 35px;
+    margin-right: 20px;
+  
+}
+.active-link {
+    position: relative;
+    top:0;
+    border-top: #0065FC solid 3px;
 }
 #nav1 {
-    border-top: solid 3px blue;
+    border-top: #0065FC solid 3px;
     color: #0065FC;
+}
+#nav2 {
+    padding-top: 38px;
 }
 @media only screen and (max-width: 750px) {
     
@@ -75,9 +85,6 @@ nav a {
       border-top: none;
     }
   }
-#nav2 {
-    padding-top: 38px;
-}
 
 /* SECTION ***************************************/
 
