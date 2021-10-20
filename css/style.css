@@ -71,7 +71,7 @@ nav a {
 #nav2 {
     padding-top: 38px;
 }
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 768px) {
     
     nav {
         margin: 0;
@@ -79,10 +79,10 @@ nav a {
     }
     ul {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         margin: 0;
         padding: 0;
-        gap: 55px;
+    
     }
     #nav1 {
       border-bottom: solid 3px blue;
@@ -301,24 +301,7 @@ main {
     gap: 30px;
     align-content:center;
 }
-@media only screen and (max-width: 750px){
-    #hosting {
-        background-color:blue;
-        border-radius: 0px;
-    }
-    .accommodation {
-        flex-direction: column;
-        margin: 0;
-        padding: 0;
-        background-color: red;
-    }
-    .accommodation-cards {
-      background-color: #fff;
-        margin: 0;
-        padding: 0;
-        gap: 0;
-    }
-}
+
 .card-image {
    
     height: 150px;
@@ -333,7 +316,6 @@ main {
  border-radius: 20px;
  padding: 5px;
  width: 29%;
- height: 30%;
  margin: 10px 0px;
  -webkit-box-shadow: 7px 6px 10px 0px #D8D8D8; 
  box-shadow: 7px 6px 10px 0px #D8D8D8;
@@ -362,6 +344,7 @@ main {
     font-size: 19px;
     margin: 0;
     padding: 0;
+    white-space: nowrap;
 }
 .text p {
     font-weight: 400;
@@ -379,6 +362,25 @@ main {
 #viewMore {
     padding: 30px;
 }
+
+
+@media only screen and (max-width: 768px){
+    #hosting {
+        border-radius: 0px;
+    }
+    .accommodation {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    .accommodation-cards {
+      background-color: #fff;
+        margin: 10px 25px;
+        padding: 0;
+        gap: 0;
+        width: 100%;
+    }
+}
 /* ACCOMMODATION***************ASIDE**************/
 
 aside {
@@ -388,11 +390,7 @@ aside {
     display: block;
     justify-content: center; 
 }
-@media only screen and (max-width: 750px){
-    aside {
-        border-radius: 0px;
-    }
-}
+
 aside h2 {
     padding: 30px;
 }
@@ -456,17 +454,17 @@ aside h2 {
 .popular-info p {
     font-weight: 400;
 }
-
-/* ACTIVITIES***********************************************/
 @media only screen and (max-width: 750px){
-    #event {
-        margin: 0px;
+    aside {
+        border-radius: 0px;
     }
-    .activities {
-        flex-direction: column;
-        margin: 0;
+    .popular-details {
+        flex-basis: 100%;
     }
+    
 }
+/* ACTIVITIES***********************************************/
+
 #event {
   margin: 20px 50px;
 }
@@ -479,12 +477,6 @@ aside h2 {
 }
 .activities-col {
     width: 25%;
-}
-
-.image-card {
-   width: 100%;
-    height: 200px;
-    border-radius: 20px 20px 0px 0px;
 }
 
 
@@ -507,6 +499,38 @@ aside h2 {
 .card-title {
     padding: 20px;
 }
+
+.image-card {
+   width: 100%;
+    height: 200px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+@media only screen and (max-width: 768px){
+    #event {
+        margin: 20px 15px;
+    }
+    .activities{
+        flex-direction: column;
+        margin: 0;
+        gap:0px;
+        justify-content: center;
+        align-items: center;
+    }
+    .activities-col {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        height: auto;
+    }
+   .oneblock .image-card{
+       height: 100px;
+       width: 100%;
+   }
+   .image-card {
+       height: 100px;
+   }
+}
 /* FOOTER ****************************************/
 footer {
     background-color: #F2F2F2;
@@ -528,4 +552,13 @@ footer {
 .footer-col p {
     font-weight: 500;
     margin-bottom: 10px;
+}
+@media screen and (max-width: 768px) {
+    footer {
+        flex-direction: column;
+    }
+    .footer-col {
+        margin: 0;
+    }
+    
 }
