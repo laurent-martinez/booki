@@ -256,7 +256,6 @@ border: #0065FC solid 3px;
         flex-direction: column;
         
     }
-    
 }
 #details {
     display: flex;
@@ -448,25 +447,21 @@ aside h2 {
 
 .popular-images {
     height: 210px;
-    min-width: 45%;
+    width: 45%;
     border-radius: 20px 0px 0px 20px;
-
 }
 
 .popular-details {
+    flex:2;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 .popular-info {
-    width: 100%;
     padding: 0px 15px 0px 15px;
     font-size: 16px;
+}
 
-}
-.popular-info h2 {
-    display: flex;
-}
 .popular-info p {
     font-weight: 400;
 }
