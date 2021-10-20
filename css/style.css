@@ -9,11 +9,18 @@ h2 {
 }
 body {
     font-family: 'Raleway', sans-serif;
-    margin: 0; 
+ 
     font-size: 16px;
     font-weight: 600;
 }
-
+.container {
+    margin: 0px 50px; 
+}
+@media screen and (max-width:768px) {
+    .container {
+        margin: 0;
+    }
+}
 a {
         text-decoration: none;
         color: inherit;
@@ -26,7 +33,6 @@ img {
 
 
 header {
-    margin-left: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -93,10 +99,6 @@ nav a {
 /* SECTION ***************************************/
 
 
-.search {
-    padding-left: 50px;
-    padding-right: 50px;
-}
 .search h1 {
     font-weight: bold;
     font-size: 32px;
@@ -197,7 +199,7 @@ display: none;
     column-gap: 30px;
     flex-wrap: wrap;
     align-items: center;
-    padding: 20px 50px 0px 50px;
+    padding: 20px 0px 0px 0px;
 }
 .filters {
     display: flex;
@@ -248,10 +250,18 @@ border: #0065FC solid 3px;
      color: white;
     border: #0065FC solid 3px;
             }
+@media screen and (max-width: 768px) {
+    .filter {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+}
 #details {
     display: flex;
     align-items: center;
-    padding: 30px 50px 20px 50px;
+    padding: 30px 0px 20px 0px;
     column-gap: 20px;
 }
 #details i {
@@ -270,7 +280,7 @@ border: #0065FC solid 3px;
 
 main {
     display: flex;
-    padding: 0px 50px 20px 50px;
+    padding: 0px 0px 20px 0px;
     gap: 30px;
      }
 
@@ -292,7 +302,7 @@ main {
 }
 
 #hosting h2 {
-    margin: 30px;
+    margin: 50px 50px
 }
 .accommodation {
     display: flex;
@@ -316,9 +326,8 @@ main {
  border-radius: 20px;
  padding: 5px;
  width: 29%;
- margin: 10px 0px;
- -webkit-box-shadow: 7px 6px 10px 0px #D8D8D8; 
- box-shadow: 7px 6px 10px 0px #D8D8D8;
+ -webkit-box-shadow: 5px 5px 9px 2px rgba(204,204,204,0.96); 
+ box-shadow: 5px 5px 9px 2px rgba(204,204,204,0.96);
  cursor: pointer;
  transition: .3s;
 }
@@ -360,7 +369,8 @@ main {
     font-weight: bolder;
 }
 #viewMore {
-    padding: 30px;
+    font-size: 20px;
+    margin: 50px 50px;
 }
 
 
@@ -398,7 +408,7 @@ aside {
 }
 
 aside h2 {
-    padding: 30px;
+    margin: 50px 50px
 }
 
 .popular-title {
@@ -490,26 +500,29 @@ aside h2 {
 .activities-col {
     width: 25%;
 }
-
-
 .twoblock {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 30px;
 }
+
 .oneblock  .image-card{
-    background-color: blue;
+   
     height: 500px;
     width: 100%;
 }
+
 .activity-cards {
-    margin-bottom: 15px;
     border-radius: 20px;
     -webkit-box-shadow: 7px 6px 10px 0px #D8D8D8; 
     box-shadow: 7px 6px 10px 0px #D8D8D8;
 }
 .card-title {
     padding: 20px;
+    display: flex;
+    flex-basis: 100%;
+    white-space: nowrap;
 }
 
 .image-card {
@@ -517,15 +530,20 @@ aside h2 {
     height: 200px;
     border-radius: 20px 20px 0px 0px;
 }
-
+#first-pic {
+    height: 250px;
+}
+#second-pic {
+  
+    height: 120px;
+}
 @media only screen and (max-width: 768px){
     #event {
         margin: 20px 15px;
     }
     .activities{
         flex-direction: column;
-        margin: 0;
-        gap:0px;
+        gap:15px;
         justify-content: center;
         align-items: center;
     }
@@ -539,8 +557,14 @@ aside h2 {
        height: 100px;
        width: 100%;
    }
+   .twoblock {
+       gap: 15px;
+   }
    .image-card {
-       height: 100px;
+       height: 120px;
+   }
+   #first-pic {
+       height: 120px;
    }
 }
 /* FOOTER ****************************************/
@@ -550,6 +574,7 @@ footer {
     justify-content: flex-start;
     width: 100%;
     height: auto;
+    margin: 0px;
     
 }
 .footer-col {
