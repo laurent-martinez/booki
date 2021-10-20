@@ -367,6 +367,7 @@ main {
 @media only screen and (max-width: 768px){
     #hosting {
         border-radius: 0px;
+        background-color: #fff;
     }
     .accommodation {
         flex-direction: column;
@@ -374,11 +375,16 @@ main {
         padding: 0;
     }
     .accommodation-cards {
-      background-color: #fff;
-        margin: 10px 25px;
-        padding: 0;
+        margin: 0px 25px;
+        padding: 5px;
         gap: 0;
         width: 100%;
+    }
+    .card-image {
+        height: 120px;
+    }
+    .info {
+        padding: 5px 15px;
     }
 }
 /* ACCOMMODATION***************ASIDE**************/
@@ -460,6 +466,12 @@ aside h2 {
     }
     .popular-details {
         flex-basis: 100%;
+    }
+    .popular-images {
+        height: 150px;
+    }
+    .popular-info h2 {
+        font-weight: 600;
     }
     
 }
