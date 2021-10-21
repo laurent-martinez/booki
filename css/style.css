@@ -494,10 +494,8 @@ aside h2 {
 
 }
 .activities {
-    margin-top: 20px;
+  margin-top: 20px;
   display: flex;
- 
-  justify-content: space-between;
   gap: 30px;
 }
 .activities-col {
