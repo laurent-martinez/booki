@@ -491,16 +491,17 @@ aside h2 {
 
 #event {
   margin: 20px 50px;
+
 }
 .activities {
     margin-top: 20px;
   display: flex;
-  width: 100%;
+ 
   justify-content: space-between;
   gap: 30px;
 }
 .activities-col {
-min-width: 25%;
+width: 24%;
 }
 .twoblock {
   display: flex;
@@ -508,12 +509,10 @@ min-width: 25%;
   justify-content: space-between;
   gap: 10px;
 }
-.oneblock {
-}
+
 .oneblock  .image-card{
    
     height: 500px;
-    width: 100%;
 }
 
 .activity-cards {
