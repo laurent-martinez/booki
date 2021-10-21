@@ -9,7 +9,6 @@ h2 {
 }
 body {
     font-family: 'Raleway', sans-serif;
- 
     font-size: 16px;
     font-weight: 600;
 }
@@ -36,7 +35,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 20px;
   
+}
+
+.logo img {
+    height: 60px;
 }
 @media only screen and (max-width: 768px) {
     header {
@@ -49,10 +53,8 @@ header {
         text-align: center;
     }
   }
-.logo img {
-    height: 60px;
-}
-nav ul {
+
+nav {
     margin: 0;
  
     list-style-type: none;
@@ -60,22 +62,22 @@ nav ul {
     justify-content: space-between;
     font-weight: 500;
 }
-nav a {
-    padding: 35px;
+li a {
+    padding: 55px;
     margin-right: 20px;
   
 }
-.active-link {
-    position: relative;
-    top:0;
-    border-top: #0065FC solid 3px;
-}
-#nav1 {
+
+#nav1:hover {
     border-top: #0065FC solid 3px;
     color: #0065FC;
+    padding-top: 40px;
 }
-#nav2 {
-    padding-top: 38px;
+
+#nav2:hover {
+    padding-top: 40px;
+    border-top: #0065FC solid 3px;
+    color: #0065FC;
 }
 @media only screen and (max-width: 768px) {
     
@@ -104,6 +106,7 @@ nav a {
     font-size: 32px;
     line-height: 36.8px;
     margin-bottom: 5px;
+    margin-top: 20px;
 }
 .search p {
     font-weight: 400;
@@ -204,7 +207,7 @@ display: none;
 .filters {
     display: flex;
     border:#F2F2F2 solid 3px;
-    border-radius: 25px;
+    border-radius: 30px;
     position: relative;
     height: 50px;
     align-items: center;
@@ -215,18 +218,18 @@ display: none;
     
     border-radius: 25px;
     position: absolute;
-    left: -10px;
+    left: -3px;
     background-color: #DEEBFF;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #0065FC;
-    width: 50px;
-    height: 100%;
+    width: 51px;
+    height: 51px;
     font-size: 20px;
 }
 .filters p {
-    padding-left: 50px;
+    padding-left: 55px;
     padding-right: 18px;
 }
 
@@ -261,7 +264,7 @@ border: #0065FC solid 3px;
     display: flex;
     align-items: center;
     padding: 30px 0px 20px 0px;
-    column-gap: 20px;
+    column-gap: 10px;
 }
 #details i {
     display: flex;
@@ -371,7 +374,10 @@ main {
     font-size: 20px;
     margin: 50px 50px;
 }
-
+@media screen and (max-width: 992px) {
+   
+    
+}
 
 @media only screen and (max-width: 768px){
     #hosting {
@@ -493,15 +499,17 @@ aside h2 {
   gap: 30px;
 }
 .activities-col {
-    width: 25%;
+min-width: 25%;
 }
 .twoblock {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 30px;
+  gap: 10px;
 }
-
+.oneblock {
+    min-height: 600px;
+}
 .oneblock  .image-card{
    
     height: 500px;
@@ -516,8 +524,8 @@ aside h2 {
 .card-title {
     padding: 20px;
     display: flex;
-    flex-basis: 100%;
-    white-space: nowrap;
+    align-items: center;
+    height: 60px;
 }
 
 .image-card {
@@ -569,7 +577,8 @@ footer {
     justify-content: flex-start;
     width: 100%;
     height: auto;
-    margin: 0px;
+    margin: 50px 0px 0px 0px;
+
     
 }
 .footer-col {
