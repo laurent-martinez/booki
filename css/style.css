@@ -53,19 +53,14 @@ header {
         text-align: center;
     }
   }
-
 nav {
     margin: 0;
- 
     list-style-type: none;
     display: flex;
-    justify-content: space-between;
     font-weight: 500;
 }
 li a {
     padding: 55px;
-    margin-right: 20px;
-  
 }
 
 #nav1:hover {
@@ -78,6 +73,20 @@ li a {
     padding-top: 40px;
     border-top: #0065FC solid 3px;
     color: #0065FC;
+}
+@media screen and (max-width: 992px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    nav {
+        margin: 15px 0px;
+    }
+    li a {
+        padding: 15px;
+    }
+    
 }
 @media only screen and (max-width: 768px) {
     
