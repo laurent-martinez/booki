@@ -316,7 +316,7 @@ main {
 
 .card-image {
    
-    height: 150px;
+    height: 160px;
     width: 100%;
     border-radius: 20px 20px 0px 0px;
     
@@ -327,7 +327,7 @@ main {
  background-color: white;
  border-radius: 20px;
  padding: 5px;
- width: 29%;
+ width: 30%;
  -webkit-box-shadow: 5px 5px 9px 2px rgba(204,204,204,0.96); 
  box-shadow: 5px 5px 9px 2px rgba(204,204,204,0.96);
  cursor: pointer;
@@ -347,22 +347,23 @@ main {
 .info {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    padding: 20px;
-    height: 40%;
+    justify-content: start;
+    padding: 0px 20px;
+    height: auto;
+    margin-top: 5px;
 }
-.text h2 {
-    font-size: 19px;
-    margin: 0;
+.info h2 {
+    font-size: 16px;
     padding: 0;
     white-space: nowrap;
 }
-.text p {
+.info p {
     font-weight: 400;
-    padding:10px 0px;
+    margin: 10px 0px;
 }
 .stars {
     color: #0065FC;
+    margin-bottom: 10px;
 }
 .grey {
     color: #D8D8D8;
@@ -508,7 +509,6 @@ min-width: 25%;
   gap: 10px;
 }
 .oneblock {
-    min-height: 600px;
 }
 .oneblock  .image-card{
    
