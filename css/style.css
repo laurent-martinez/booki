@@ -78,6 +78,7 @@ li a {
 }
 @media screen and (max-width: 992px) {
     header {
+        margin: 0px;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
@@ -88,6 +89,15 @@ li a {
     li a {
         padding: 15px;
     }
+    #nav1:hover {
+
+        border-bottom: solid 3px blue;
+        border-top: none;
+      }
+      #nav2:hover {
+          border-bottom: solid 3px blue;
+          border-top: none;
+        }
     
 }
 @media only screen and (max-width: 768px) {
@@ -126,6 +136,7 @@ li a {
 
 
 .search h1 {
+  
     font-weight: bold;
     font-size: 30px;
     line-height: 36.8px;
@@ -133,6 +144,7 @@ li a {
     margin-top: 20px;
 }
 .search p {
+      display: flex;
     font-weight: 400;
   padding-top: 0;
   margin: 0;
@@ -140,9 +152,11 @@ li a {
 @media screen and (max-width: 992px) {
     .search h1 {
         font-size: 28px;
-  
+
     }
- 
+    .search p {
+        justify-content: center;
+    }
 }
 .searchbar {
     display: flex;
@@ -186,8 +200,7 @@ display: none;
         margin-top: 20px;
     }
     .search h1 {
-        margin: 10px 0px;
-        word-break: normal;
+        margin: 10px auto;
         line-height: 20px;
         padding: 0;
         font-size: 20px;
@@ -235,11 +248,10 @@ display: none;
 }
 .filter {
     display: flex;
-    margin-top: 20px;
+    margin-top: 30px;
     column-gap: 30px;
     flex-wrap: wrap;
     align-items: center;
-    padding: 20px 0px 0px 0px;
 }
 .filters {
     display: flex;
@@ -338,7 +350,12 @@ main {
     padding: 0px 0px 20px 0px;
     gap: 30px;
      }
-
+@media screen and (max-width: 992px) {
+    #details {
+        justify-content: center;
+    }
+    
+}
 @media only screen and (max-width: 768px) {
     #details {
         justify-content: center;
@@ -350,6 +367,7 @@ main {
         margin: 0;
         padding:0;
     }
+   
 }
 /* Accommodation ************ARTICLE**********************/
 
