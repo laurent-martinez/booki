@@ -13,11 +13,11 @@ body {
     font-weight: 600;
 }
 .container {
-    margin: 0px 50px; 
+    margin: 0px 45px; 
 }
 @media screen and (max-width:768px) {
     .container {
-        margin: 0;
+        margin: 0px 15px;
     }
 }
 a {
@@ -35,7 +35,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 20px;
+    padding-top: 30px;
   
 }
 
@@ -68,11 +68,11 @@ li a {
 #nav1:hover {
     border-top: #0065FC solid 3px;
     color: #0065FC;
-    padding-top: 40px;
+    padding-top: 50px;
 }
 
 #nav2:hover {
-    padding-top: 40px;
+    padding-top: 50px;
     border-top: #0065FC solid 3px;
     color: #0065FC;
 }
@@ -95,6 +95,8 @@ li a {
     nav {
         margin: 0;
         padding: 0;
+        width: 100%;
+        
     }
     ul {
         display: flex;
@@ -104,9 +106,20 @@ li a {
     
     }
     #nav1 {
+        width: 50%;
+    }
+    #nav2 {
+        width: 50%
+    }
+    #nav1:hover {
+
       border-bottom: solid 3px blue;
       border-top: none;
     }
+    #nav2:hover {
+        border-bottom: solid 3px blue;
+        border-top: none;
+      }
   }
 
 /* SECTION ***************************************/
@@ -114,7 +127,7 @@ li a {
 
 .search h1 {
     font-weight: bold;
-    font-size: 32px;
+    font-size: 30px;
     line-height: 36.8px;
     margin-bottom: 5px;
     margin-top: 20px;
@@ -127,12 +140,9 @@ li a {
 @media screen and (max-width: 992px) {
     .search h1 {
         font-size: 28px;
-        text-align: center;
+  
     }
-    .search p {
-        text-align: center;
-    }
-    
+ 
 }
 .searchbar {
     display: flex;
@@ -155,14 +165,20 @@ li a {
     font-size: 16px;
     font-weight: bold;
     border:#0065FC solid 2px;
-    padding: 0 20px;
+    padding: 0 15px;
   
 
 }
 .button-mobile {
 display: none;
 }
-
+@media screen and (max-width: 992px) {
+    .searchbar {
+        margin: 15px auto;
+        justify-content: center;
+    }
+    
+}
 @media only screen and (max-width: 750px) {
     
     .search {
@@ -170,21 +186,22 @@ display: none;
         margin-top: 20px;
     }
     .search h1 {
-        margin: 10px 20px;
+        margin: 10px 0px;
+        word-break: normal;
         line-height: 20px;
         padding: 0;
         font-size: 20px;
     }
     .search p {
-        margin: 0px 20px;
+        margin: 0px;
     }
     .searchbar {
-        margin: 30px 0px;
+        margin: 15px 0px;
         display: flex;
         justify-content: center;
     }
     .searchbar input {
-       margin: 0px 0px;
+       margin: 0px;
        z-index: 1;
     }
     .searchbar button {
@@ -226,6 +243,7 @@ display: none;
 }
 .filters {
     display: flex;
+    margin-top: 5px;
     border:#F2F2F2 solid 3px;
     border-radius: 30px;
     position: relative;
@@ -274,10 +292,23 @@ border: #0065FC solid 3px;
     border: #0065FC solid 3px;
             }
 @media screen and (max-width: 768px) {
+    .location-mark {
+        width: 40px;
+        font-size: 16px;
+    }
+
     .filter {
         display: flex;
-        flex-direction: column;
+       column-gap: 15px;
         
+    }
+    .filters {
+        height: 40px;
+    }
+    .filters i {
+        height: 40px;
+        width: 40px;
+        font-size: 16px;
     }
 }
 #details {
@@ -293,9 +324,11 @@ border: #0065FC solid 3px;
     color: #0065FC;
     border: #F2F2F2 solid 2px;
     border-radius: 50px;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
 }
+
 #details p {
     font-weight: 400;
 }
@@ -306,7 +339,12 @@ main {
     gap: 30px;
      }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 768px) {
+    #details {
+        justify-content: center;
+        margin: 0;
+        column-gap: 5px;
+    }
     main {
         flex-direction: column-reverse;
         margin: 0;
@@ -316,21 +354,24 @@ main {
 /* Accommodation ************ARTICLE**********************/
 
 #hosting {
+    position: relative;
     background-color: #F2F2F2;
     border-radius: 20px;
     flex: 2;
-    display: block;
-    padding: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
 }
 
 #hosting h2 {
-    margin: 50px 50px
+ padding: 0px 0px 35px 40px;
 }
 .accommodation {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    padding: 0px 15px;
+    gap: 35px;
     align-content:center;
 }
 
@@ -393,7 +434,7 @@ main {
 }
 #viewMore {
     font-size: 20px;
-    margin: 50px 50px;
+    margin: 60px 0px 30px  40px;
 }
 @media screen and (max-width: 992px) {
    
@@ -406,6 +447,7 @@ main {
         background-color: #fff;
     }
     .accommodation {
+        flex:1;
         flex-direction: column;
         margin: 0;
         padding: 0;
@@ -431,10 +473,11 @@ aside {
     border-radius: 20px;
     display: block;
     justify-content: center; 
+    padding-bottom: 35px;
 }
 
 aside h2 {
-    margin: 50px 50px
+    margin: 50px 35px;
 }
 
 .popular-title {
@@ -443,7 +486,7 @@ aside h2 {
     align-items: center;
 }
 .popular-title i {
-    margin-right: 30px;
+    margin-right: 35px;
     font-size: 24px;
 }
 .popular-cards {
@@ -453,7 +496,7 @@ aside h2 {
     border-radius: 20px;
     padding: 5px;
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
     width: 90%;
     display: flex;
     cursor: pointer;
@@ -473,7 +516,7 @@ aside h2 {
 }
 
 .popular-images {
-    height: 210px;
+    height: 180px;
     width: 45%;
     border-radius: 20px 0px 0px 20px;
 }
@@ -495,6 +538,13 @@ aside h2 {
 @media only screen and (max-width: 750px){
     aside {
         border-radius: 0px;
+        padding: 0;
+        margin: 0;
+        flex: 1;
+    }
+    .popular-cards {
+        width: 100%;
+        padding: 5px;
     }
     .popular-details {
         flex-basis: 100%;
@@ -510,7 +560,8 @@ aside h2 {
 /* ACTIVITIES***********************************************/
 
 #event {
-  margin: 20px 50px;
+  margin-top: 40px;
+  margin-bottom: 10px;
 
 }
 .activities {
@@ -547,7 +598,7 @@ width: 24%;
 
 .image-card {
    width: 100%;
-    height: 200px;
+    height: 190px;
     border-radius: 20px 20px 0px 0px;
 }
 #first-pic {
@@ -555,7 +606,7 @@ width: 24%;
 }
 #second-pic {
   
-    height: 120px;
+    height: 130px;
 }
 @media only screen and (max-width: 768px){
     #event {
@@ -574,7 +625,7 @@ width: 24%;
         height: auto;
     }
    .oneblock .image-card{
-       height: 100px;
+       height: 115px;
        width: 100%;
    }
    .twoblock {
@@ -603,6 +654,9 @@ footer {
     flex-direction: column;
     padding: 30px;
     margin-right: 200px;
+}
+.footer-col:first-child {
+    padding-left: 50px;
 }
 .footer-col h3 {
     margin-bottom: 20px;
