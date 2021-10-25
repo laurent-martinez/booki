@@ -16,7 +16,7 @@ body {
     font-weight: 600;
 }
 .container {
-    margin: 0px 45px; 
+    margin: 0px 50px; 
 }
 @media screen and (max-width:768px) {
     .container {
@@ -52,13 +52,12 @@ header {
       flex-direction: column;
     }
     .logo {
+        padding: 20px;
         justify-content: center;
         text-align: center;
     }
   }
-nav {
-  
-}
+
 ul {  margin: 0;
     list-style-type: none;
     display: flex;
@@ -87,11 +86,13 @@ li a {
         justify-content: space-between;
     }
     nav {
-        margin: 15px 0px;
+        margin: 50px 0px;
+        
     }
-    li a {
-        padding: 15px;
+    ul {
+        justify-content: space-between;
     }
+
     #nav1:hover {
 
         border-bottom: solid 3px blue;
@@ -102,7 +103,7 @@ li a {
           border-top: none;
         }
     
-}
+    }
 @media only screen and (max-width: 768px) {
     
     nav {
@@ -113,16 +114,20 @@ li a {
     }
     ul {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         margin: 0;
         padding: 0;
     
+    }
+    li a {
+        padding: 0px;
+        margin: 0px;
     }
     #nav1 {
         width: 50%;
     }
     #nav2 {
-        width: 50%
+        width: 50%;
     }
     #nav1:hover {
 
@@ -155,6 +160,7 @@ li a {
 @media screen and (max-width: 992px) {
     .search h1 {
         font-size: 28px;
+        text-align: center;
 
     }
     .search p {
@@ -196,14 +202,15 @@ display: none;
     }
     
 }
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 768px) {
     
     .search {
         padding: 0;
         margin-top: 20px;
     }
     .search h1 {
-        margin: 10px auto;
+        margin: 10px 5px;
+
         line-height: 20px;
         padding: 0;
         font-size: 20px;
@@ -307,7 +314,9 @@ border: #0065FC solid 3px;
     border: #0065FC solid 3px;
             }
 @media screen and (max-width: 992px) {
-    
+    .filter {
+        justify-content: center;
+    }
 }
 @media screen and (max-width: 768px) {
     .location-mark {
@@ -319,13 +328,15 @@ border: #0065FC solid 3px;
         display: flex;
        column-gap: 15px;
        font-size: 14px;
-       flex-direction: column;
        align-items: flex-start;
         
     }
     .filters {
         height: 40px;
 
+    }
+    .filters p {
+        width: 100%;
     }
     .filters i {
         height: 40px;
@@ -362,7 +373,6 @@ main {
      }
 @media screen and (max-width: 992px) {
     main {
-        flex-direction: column-reverse;
         gap: 0px;
     }
     #details {
@@ -390,7 +400,7 @@ main {
     }
    
 }
-/* Accommodation ************ARTICLE**********************/
+/* Accommodation ************ARTICLE********************************************************************************************/
 
 #hosting {
     position: relative;
@@ -479,8 +489,7 @@ main {
    
  
     .container {
-        margin: 0px;
-        text-align: center;
+        margin: 0px 15px;
     }
     .accommodation {
         flex-direction: column;
@@ -520,15 +529,14 @@ main {
         margin: 60px 0px 30px  20px;
     }
 }
-/* ACCOMMODATION***************ASIDE**************/
+/* ACCOMMODATION***************ASIDE******************************************************************************************************/
 
 aside {
     flex: 1;
     background-color: #F2F2F2;
     border-radius: 20px;
     display: flex;
-    flex-direction: column;
-    justify-content: center; 
+    flex-direction: column; 
     padding-bottom: 25px;
 }
 
@@ -630,6 +638,7 @@ aside h2 {
     .popular-info h2 {
         font-weight: 600;
     }
+ 
     
 }
 /* ACTIVITIES***********************************************/
@@ -656,7 +665,7 @@ width: 24%;
 
 .oneblock  .image-card{
    
-    height: 500px;
+height: 500px;
 }
 
 .activity-cards {
@@ -684,7 +693,7 @@ width: 24%;
     height: 130px;
 }
 @media screen and (max-width: 992px) {
-    
+
 }
 @media only screen and (max-width: 768px){
     #event {
