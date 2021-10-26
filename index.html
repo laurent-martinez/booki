@@ -19,7 +19,10 @@
 <body>
   <header class="container">
     <div class="logo">
-      <img src="images/Booki.png" alt="Logo Booki" />
+      <img srcset="./images/Booki@3x.png 285w,./images/Booki.png 191w"
+     sizes="(max-width: 768px) 191px,
+            285px"
+            src="./images/Booki@3x.png" alt="Logo Booki"/>
     </div>
     <nav>
       <ul>
@@ -42,6 +45,7 @@
     </div>
     <div class="filter">
       <p>Filtres</p>
+      <div class="filters-group">
       <div class="filters money">
         <i class="fas fa-money-bill-wave"></i>
         <p>Économique</p>
@@ -57,6 +61,7 @@
       <div class="filters dog">
         <i class="fas fa-dog"></i>
         <p>Animaux autorisés</p>
+      </div>
       </div>
     </div>
     <div id="details">
