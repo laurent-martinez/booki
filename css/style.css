@@ -580,7 +580,7 @@ footer {
     }
     #nav1 {
         width: 50%;
-        padding: 15px 35px;
+        padding: 15px 20px;
         border-bottom: solid 4px #F2F2F2;
     }
     #nav2 {
@@ -589,12 +589,12 @@ footer {
         border-bottom: solid 4px #F2F2F2;
     }
     #nav1:hover {
-      padding: 15px 35px;
+     
       border-bottom: solid 4px blue;
       border-top: none;
     }
     #nav2:hover {
-        padding: 15px 50px;
+  
         border-bottom: solid 4px blue;
         border-top: none;
     }
