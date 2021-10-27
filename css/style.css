@@ -434,7 +434,7 @@ footer {
 .footer-col {
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    padding: 50px 0px;
     margin-right: 200px;
 }
 .footer-col:first-child {
@@ -505,6 +505,7 @@ footer {
     }
     .filter {
         gap: 10px;
+        justify-content: center;
     }
     
     main {
@@ -540,7 +541,29 @@ footer {
         height: 95px;
         border-radius: 20px 20px 0px 0px;
     }
-    
+    .activities {
+        align-items: center;
+    }
+    .image-card {
+        height: 150px;
+    }
+    .oneblock  .image-card{  
+        height: 200px;
+    }
+    #first-pic {
+        height: 150px;
+    }
+    #second-pic {
+        height: 150px;
+    }
+    footer {
+        justify-content: space-around;
+    }
+    .footer-col {
+        margin-right: 100px;
+        padding: 50px 0px;
+    }
+ 
 }
 
 /****************** MOBILE -screen under 768px- ************************************************************/
@@ -768,5 +791,6 @@ footer {
    }
    .footer-col {
     margin: 0;
+    padding: 50px 30px;
    }
 }
