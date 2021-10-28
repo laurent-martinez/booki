@@ -35,6 +35,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding-top: 30px;
+    margin: 0px 50px;
   
 }
 
@@ -48,7 +49,9 @@ ul {
     list-style-type: none;
     display: flex;
     font-weight: 500;
+    text-align: center;
 }
+
 .nav__link {
     padding: 55px;
 }
@@ -249,6 +252,7 @@ main {
     border-radius: 20px;
     padding: 6px;
     width: 30%;
+    min-width: 250px;
     -webkit-box-shadow: 5px 5px 9px 2px rgba(204,204,204,0.96); 
     box-shadow: 5px 5px 9px 2px rgba(204,204,204,0.96);
     cursor: pointer;
@@ -460,14 +464,25 @@ footer {
         justify-content: space-between;
     }
     .nav {
-        margin: 50px 0px;    
+        margin: 50px 0px;
+        width: 100%;
     }
-    ul  {
-        justify-content: space-between;
+    ul {
+ 
+        width: 100%;
     }
+    li {
+       width: 50%;
+       padding-bottom: 30px;
+       border-bottom: #F2F2F2 solid 4px;
+       
+    }
+    li:hover {
+       border-bottom: #0065FC solid 4px;
+       padding-bottom: 30px;
+    }
+ 
     .nav__link:hover {
-        padding: 30px;
-        border-bottom: solid 3px blue;
         border-top: none;
     }
     /************ SEARCH & FILTERS*************************/
@@ -546,37 +561,34 @@ footer {
             text-align: center;
         }
         .nav {
-            margin: 0;
+            margin: 30px 0px;
             padding: 0;
             width: 100%;
         
         }
         ul {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             margin: 0;
             padding: 0;
-    
+            text-align: center;
+        }
+        li:hover {
+            padding-bottom: 15px;
         }
         .nav__link {
        
             margin: 0px;
             padding: 0px;
-            border-bottom: solid 4px #F2F2F2;
-            width: max-content;
+           
         }
         .nav__link:hover {
-            border-bottom: solid 4px blue;
+           
             border-top: none;
         }
     
-        .nav__link__accommodation {
-            padding: 15px 50px;
-        }   
-        .nav__link__activities {
-            padding: 15px 65px;
-        }
-        .nav__link__accommodation:hover {
+     
+        /*.nav__link__accommodation:hover {
             padding: 15px 50px;
    
         }
