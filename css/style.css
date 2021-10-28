@@ -237,16 +237,6 @@ main {
     gap: 35px;
     align-content:center;
 }
-
-.card-image {
-   
-    height: 160px;
-    width: 100%;
-    border-radius: 20px 20px 0px 0px;
-    
-}
-
-
 .accommodation-cards {
     background-color: white;
     border-radius: 20px;
@@ -269,6 +259,13 @@ main {
     flex-basis: 100%;
 }
 
+.card-image {
+   
+    height: 160px;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+    
+}
 .info {
     display: flex;
     flex-direction: column;
@@ -288,7 +285,7 @@ main {
 }
 .stars {
     color: #0065FC;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 .grey {
     color: #D8D8D8;
@@ -352,6 +349,7 @@ aside h2 {
      position: absolute;
     bottom: -20px;
     padding: 20px;
+    margin-bottom: 10px;
 }
 
 .popular-images {
