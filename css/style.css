@@ -584,15 +584,6 @@ footer {
            
             border-top: none;
         }
-    
-     
-        /*.nav__link__accommodation:hover {
-            padding: 15px 50px;
-   
-        }
-        .nav__link__activities:hover {
-            padding: 15px 65px;
-        }
     /***** SEARCH & FILTERS ************************************************/
         .search {
             padding: 0;
@@ -635,7 +626,7 @@ footer {
             display: none;
         }
         .btn-mobile {
-            display: flex !important;
+            display: flex;
             justify-content: center;
             align-items: center;
             border-radius: 50px;
@@ -670,7 +661,6 @@ footer {
     /************ACCOMMODATION **************** ARTICLE ***********************/
         main {
             flex-direction: column-reverse;
-            margin: 0 !important;
             padding:0;
         }
         #accommodation {
