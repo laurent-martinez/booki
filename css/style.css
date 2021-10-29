@@ -587,7 +587,7 @@ footer {
     /***** SEARCH & FILTERS ************************************************/
         .search {
             padding: 0;
-            margin: 40px 15px 0px 15px;
+            margin: 0px 15px 0px 15px;
         }
         .search h1 {
             margin: 10px auto;
