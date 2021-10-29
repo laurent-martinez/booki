@@ -545,7 +545,11 @@ footer {
     }
     
 }
-
+@media screen and (max-width: 814px) {
+    .card-title {
+        padding: 15px;
+    }
+}
 /****************** MOBILE -screen under 768px- ************************************************************/
 
     @media screen and (max-width: 768px) {
