@@ -190,7 +190,7 @@ ul {
     display: flex;
     align-items: center;
     padding: 30px 0px 20px 0px;
-    column-gap: 10px;
+    gap: 10px;
 }
 #details i {
     display: flex;
@@ -211,7 +211,7 @@ ul {
 main {
     display: flex;
     padding: 0px 0px 20px 0px;
-    gap: 30px;
+    gap:35px;
      }
 
 /* ACCOMODATION ************ARTICLE********************************************************************************************/
@@ -546,7 +546,7 @@ footer {
 
     @media screen and (max-width: 768px) {
         .container {
-            margin: 0px 15px;
+            margin: 0px;
         }
         header {
             margin: 0;
@@ -587,12 +587,12 @@ footer {
     /***** SEARCH & FILTERS ************************************************/
         .search {
             padding: 0;
-            margin-top: 40px;
+            margin: 40px 15px 0px 15px;
         }
         .search h1 {
             margin: 10px auto;
             line-height: 25px;
-            padding: 0px auto;
+            padding: 0px;
             font-size: 20px;
             text-align: unset;
         }
@@ -634,6 +634,7 @@ footer {
         .filter {
             justify-content: flex-start;
             gap: 15px;
+            margin: 0px 15px;
         }
         .filters-group {
             gap: 10px;
@@ -646,8 +647,8 @@ footer {
         }
   
         #details {
-            margin: 0;
-            column-gap: 10px;
+            margin: 0px 15px;
+            gap: 10px;
             align-items: start;
             white-space: pre-line;
         }
@@ -661,7 +662,8 @@ footer {
     /************ACCOMMODATION **************** ARTICLE ***********************/
         main {
             flex-direction: column-reverse;
-            padding:0;
+            padding:0px;
+            margin: 0px;
         }
         #accommodation {
             border-radius: 0px;
@@ -692,7 +694,6 @@ footer {
             margin: 60px 0px 30px  20px;
         }
     /*******ACCOMODATION ****************ASIDE****************************/
-
         aside h2 {
             margin: 35px 25px;
         }
