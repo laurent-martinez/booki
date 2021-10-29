@@ -462,7 +462,7 @@ footer {
         justify-content: space-between;
     }
     .nav {
-        margin: 50px 0px;
+        margin: 50px 0px 30px 0px;
         width: 100%;
     }
     ul {
@@ -487,13 +487,18 @@ footer {
     .search h1 {
         font-size: 28px;
         text-align: center;
+        margin-top: 0px;
     }
     .search p {
+        margin-bottom: 30px;
         justify-content: center;
     }
     .search__bar {
         margin: 15px auto;
         justify-content: center;
+    }
+    .search__bar__location {
+        min-width: 60px;
     }
     .filter {
         gap: 25px;
@@ -579,6 +584,9 @@ footer {
             padding: 0;
             text-align: center;
         }
+        li {
+            padding-bottom: 15px;
+        }
         li:hover {
             padding-bottom: 15px;
         }
@@ -598,14 +606,14 @@ footer {
             padding: 0;
         }
         .search h1 {
-            margin: 10px 15px;
-            line-height: 25px;
+            margin: 0px 15px 14px 15px;
+            line-height: 28px;
             padding: 0px 15px 0px 5px;
-            font-size: 20px;
+            font-size: 24px;
             text-align: unset;
         }
         .search p {
-            font-size: 15px;
+            font-size: 16px;
             margin: 0px 15px;
             padding-left: 5px;
             justify-content: start;
@@ -616,7 +624,7 @@ footer {
             display: flex;
         }
         .search__bar__location {
-            width: 40px;
+            min-width: 50px;
             font-size: 16px;
         }
         .search__bar input {
@@ -743,6 +751,10 @@ footer {
             margin: 0;
             padding: 0;
             height: auto;
+        }
+        .activity-cards {
+            font-size: 14px;
+            border-spacing: 5px;
         }
         .oneblock .activity-image{
             height: 145px;
