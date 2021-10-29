@@ -592,25 +592,24 @@ footer {
         
         .search {
             padding: 0;
-            margin: 0px 15px 0px 15px;
         }
         .search h1 {
-            margin: 10px auto;
+            margin: 10px 15px;
             line-height: 25px;
-            padding: 0px 5px;
+            padding: 0px 15px 0px 5px;
             font-size: 20px;
             text-align: unset;
         }
         .search p {
             font-size: 15px;
-            margin: 0px;
+            margin: 0px 15px;
             padding-left: 5px;
             justify-content: start;
+           
         }
         .search__bar {
             margin: 25px auto;
             display: flex;
-            justify-content: center;
         }
         .search__bar__location {
             width: 40px;
@@ -658,12 +657,15 @@ footer {
             align-items: start;
             white-space: pre-line;
         }
+       
+        
         #details i {
             align-content: flex-start;
             width: 25px;
             height: 25px;
             padding: 10px;
             font-size: 12px;
+            margin-top: -3px;
         }
     /************ACCOMMODATION **************** ARTICLE ***********************/
         main {
