@@ -653,6 +653,9 @@ footer {
             gap: 15px;
             margin: 0px 15px;
         }
+        .filter > p {
+            padding-left: 5px
+        }
         .filters-group {
             gap: 10px;
             flex-wrap: wrap;
@@ -661,6 +664,7 @@ footer {
         }
         .filters p {
             width: 100%;
+          
         }
   
         #details {
