@@ -263,7 +263,7 @@ main {
    
     height: 160px;
     width: 100%;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 15px 15px 0px 0px;
     
 }
 .accommodation__info {
@@ -355,7 +355,7 @@ aside h2 {
 .popular-images {
     height: 185px;
     width: 40%;
-    border-radius: 20px 0px 0px 20px;
+    border-radius: 15px 0px 0px 15px;
 }
 
 .popular-details {
